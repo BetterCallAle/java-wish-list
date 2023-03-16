@@ -70,14 +70,8 @@ public class Main {
         return duplicatesCounter;
     }
 
-    public static Set<String> uniqueWishes(List<Wish> array){
-        Set<String> uniqueWishes = new HashSet<>();
-
-        for (int i = 0; i < array.size(); i++) {
-            uniqueWishes.add(array.get(i).getWish());
-        }
-
-        return uniqueWishes;
+    public static Set<Wish> uniqueWishes(List<Wish> array){
+        return new HashSet<Wish>(array);
     }
 
     public static Map<String, Integer> countWishPerReceiver(List<Wish> array){
