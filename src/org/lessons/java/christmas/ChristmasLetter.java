@@ -85,6 +85,6 @@ public class ChristmasLetter {
             throw new IllegalArgumentException("Sei stato cattivo non riceverai niente");
         }
 
-        System.out.println(wishList);
+        System.out.println(toString());
     }
 }
